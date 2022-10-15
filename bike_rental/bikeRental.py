@@ -32,7 +32,7 @@ class BikeRental:
         else:
             now = datetime.datetime.now()                      
             print("You have rented a {} bike(s) on hourly basis today at {} hours.".format(n,now.hour))
-            print("You will be charged $5 for each hour per bike.")
+            print("You will be charged 5JD for each hour per bike.")
             print("We hope that you enjoy our service.")
 
             self.stock -= n
@@ -53,7 +53,7 @@ class BikeRental:
         else:
             now = datetime.datetime.now()                      
             print("You have rented {} bike(s) on daily basis today at {} hours.".format(n, now.hour))
-            print("You will be charged $20 for each day per bike.")
+            print("You will be charged 20JD for each day per bike.")
             print("We hope that you enjoy our service.")
 
             self.stock -= n
@@ -74,7 +74,7 @@ class BikeRental:
         else:
             now = datetime.datetime.now()
             print("You have rented {} bike(s) on weekly basis today at {} hours.".format(n, now.hour))
-            print("You will be charged $60 for each week per bike.")
+            print("You will be charged 60JD for each week per bike.")
             print("We hope that you enjoy our service.")
             self.stock -= n
 
@@ -114,7 +114,7 @@ class BikeRental:
                 bill = bill * 0.7
 
             print("Thanks for returning your bike. Hope you enjoyed our service!")
-            print("That would be ${}".format(bill))
+            print("That would be {}JD".format(bill))
             return bill
         else:
             print("Are you sure you rented a bike with us?")
